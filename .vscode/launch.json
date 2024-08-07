@@ -1,44 +1,9 @@
 {
+  // Use IntelliSense para saber los atributos posibles.
+  // Mantenga el puntero para ver las descripciones de los existentes atributos.
+  // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
-    {
-      "type": "lldb",
-      "request": "launch",
-      "name": "Debug unit tests in library 'commands'",
-      "cargo": {
-        "args": [
-          "test",
-          "--no-run",
-          "--lib",
-          "--package=commands"
-        ],
-        "filter": {
-          "name": "commands",
-          "kind": "lib"
-        }
-      },
-      "args": [],
-      "cwd": "${workspaceFolder}"
-    },
-    {
-      "type": "lldb",
-      "request": "launch",
-      "name": "Debug unit tests in library 'shared'",
-      "cargo": {
-        "args": [
-          "test",
-          "--no-run",
-          "--lib",
-          "--package=shared"
-        ],
-        "filter": {
-          "name": "shared",
-          "kind": "lib"
-        }
-      },
-      "args": [],
-      "cwd": "${workspaceFolder}"
-    },
     {
       "type": "lldb",
       "request": "launch",
@@ -79,15 +44,15 @@
     {
       "type": "lldb",
       "request": "launch",
-      "name": "Debug executable 'naeko-bot'",
+      "name": "Debug executable 'uptime-api'",
       "cargo": {
         "args": [
           "build",
-          "--bin=naeko-bot",
-          "--package=naeko-bot"
+          "--bin=uptime-api",
+          "--package=uptime-api"
         ],
         "filter": {
-          "name": "naeko-bot",
+          "name": "uptime-api",
           "kind": "bin"
         }
       },
@@ -97,16 +62,16 @@
     {
       "type": "lldb",
       "request": "launch",
-      "name": "Debug unit tests in executable 'naeko-bot'",
+      "name": "Debug unit tests in executable 'uptime-api'",
       "cargo": {
         "args": [
           "test",
           "--no-run",
-          "--bin=naeko-bot",
-          "--package=naeko-bot"
+          "--bin=uptime-api",
+          "--package=uptime-api"
         ],
         "filter": {
-          "name": "naeko-bot",
+          "name": "uptime-api",
           "kind": "bin"
         }
       },
