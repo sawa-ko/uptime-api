@@ -1,5 +1,5 @@
 [package]
-name = "rust-minimal-binary-template"
+name = "uptime-api"
 description = "Minimal template for new binary rust projects."
 homepage = "https://naeko.moe/"
 license-file = "LICENSE"
