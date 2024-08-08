@@ -27,7 +27,7 @@ WORKDIR /app
 COPY . .
 
 # Build application
-RUN cargo build --release --package naeko-bot
+RUN cargo build --release --package uptime-api
 
 # Set image base to alpine linux latest version and name the stage as runtime
 FROM alpine:latest as runtime
@@ -46,13 +46,13 @@ RUN apk update && \
 WORKDIR /app
 
 # Copy binary
-COPY --from=builder /app/target/release/naeko-bot .
+COPY --from=builder /app/target/release/uptime-api .
 
 # Expose port
 EXPOSE 3000
 
 # Run application
-ENTRYPOINT ["./naeko-bot"]
+ENTRYPOINT ["./uptime-api"]
 
 # Labels for the image
 LABEL maintainer="kanamepng"
